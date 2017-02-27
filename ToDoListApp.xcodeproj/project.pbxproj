@@ -7,18 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B4C15AD01E6433D300C0A7F5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B4C15ACF1E6433D300C0A7F5 /* main.m */; };
-		B4C15AD31E6433D300C0A7F5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B4C15AD21E6433D300C0A7F5 /* AppDelegate.m */; };
-		B4C15AD91E6433D300C0A7F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4C15AD71E6433D300C0A7F5 /* Main.storyboard */; };
-		B4C15ADB1E6433D300C0A7F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4C15ADA1E6433D300C0A7F5 /* Assets.xcassets */; };
-		B4C15ADE1E6433D300C0A7F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4C15ADC1E6433D300C0A7F5 /* LaunchScreen.storyboard */; };
+		B48CECBE1E645BC80002CE01 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B48CECAB1E645BC80002CE01 /* AppDelegate.m */; };
+		B48CECBF1E645BC80002CE01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B48CECAC1E645BC80002CE01 /* Assets.xcassets */; };
+		B48CECC01E645BC80002CE01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B48CECAE1E645BC80002CE01 /* LaunchScreen.storyboard */; };
+		B48CECC11E645BC80002CE01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B48CECB01E645BC80002CE01 /* Main.storyboard */; };
+		B48CECC21E645BC80002CE01 /* CustomTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B48CECB31E645BC80002CE01 /* CustomTextViewController.m */; };
+		B48CECC31E645BC80002CE01 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B48CECB41E645BC80002CE01 /* Info.plist */; };
+		B48CECC41E645BC80002CE01 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B48CECB51E645BC80002CE01 /* main.m */; };
+		B48CECC51E645BC80002CE01 /* SQLiteDbClass.m in Sources */ = {isa = PBXBuildFile; fileRef = B48CECB71E645BC80002CE01 /* SQLiteDbClass.m */; };
+		B48CECC61E645BC80002CE01 /* TodoListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B48CECB91E645BC80002CE01 /* TodoListCell.m */; };
+		B48CECC71E645BC80002CE01 /* TodoListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B48CECBB1E645BC80002CE01 /* TodoListTableViewController.m */; };
+		B48CECC81E645BC80002CE01 /* TodoObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B48CECBD1E645BC80002CE01 /* TodoObject.m */; };
 		B4C15AE91E6433D300C0A7F5 /* SimpleNotePadAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B4C15AE81E6433D300C0A7F5 /* SimpleNotePadAppTests.m */; };
 		B4C15AF41E6433D300C0A7F5 /* SimpleNotePadAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B4C15AF31E6433D300C0A7F5 /* SimpleNotePadAppUITests.m */; };
-		B4C15B031E64347500C0A7F5 /* NoteListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4C15B021E64347500C0A7F5 /* NoteListTableViewController.m */; };
-		B4C15B0D1E6437A300C0A7F5 /* NoteObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B4C15B0C1E6437A300C0A7F5 /* NoteObject.m */; };
-		B4C15B101E6438AF00C0A7F5 /* SQLiteDbClass.m in Sources */ = {isa = PBXBuildFile; fileRef = B4C15B0F1E6438AF00C0A7F5 /* SQLiteDbClass.m */; };
-		B4C15B131E643F3800C0A7F5 /* NoteListCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B4C15B121E643F3800C0A7F5 /* NoteListCellTableViewCell.m */; };
-		B4C15B161E643FF300C0A7F5 /* CustomTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4C15B151E643FF300C0A7F5 /* CustomTextViewController.m */; };
 		B4C15B1A1E6446CC00C0A7F5 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B4C15B181E6446A300C0A7F5 /* libsqlite3.tbd */; };
 /* End PBXBuildFile section */
 
@@ -40,30 +41,30 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B4C15ACB1E6433D300C0A7F5 /* SimpleNotePadApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleNotePadApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B4C15ACF1E6433D300C0A7F5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		B4C15AD11E6433D300C0A7F5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		B4C15AD21E6433D300C0A7F5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B4C15AD81E6433D300C0A7F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B4C15ADA1E6433D300C0A7F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B4C15ADD1E6433D300C0A7F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		B4C15ADF1E6433D300C0A7F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B4C15AE41E6433D300C0A7F5 /* SimpleNotePadAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleNotePadAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B48CECAA1E645BC80002CE01 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = TodoListApp/AppDelegate.h; sourceTree = SOURCE_ROOT; };
+		B48CECAB1E645BC80002CE01 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = TodoListApp/AppDelegate.m; sourceTree = SOURCE_ROOT; };
+		B48CECAC1E645BC80002CE01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = TodoListApp/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		B48CECAF1E645BC80002CE01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B48CECB11E645BC80002CE01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
+		B48CECB21E645BC80002CE01 /* CustomTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomTextViewController.h; path = TodoListApp/CustomTextViewController.h; sourceTree = SOURCE_ROOT; };
+		B48CECB31E645BC80002CE01 /* CustomTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomTextViewController.m; path = TodoListApp/CustomTextViewController.m; sourceTree = SOURCE_ROOT; };
+		B48CECB41E645BC80002CE01 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = TodoListApp/Info.plist; sourceTree = SOURCE_ROOT; };
+		B48CECB51E645BC80002CE01 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = TodoListApp/main.m; sourceTree = SOURCE_ROOT; };
+		B48CECB61E645BC80002CE01 /* SQLiteDbClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SQLiteDbClass.h; path = TodoListApp/SQLiteDbClass.h; sourceTree = SOURCE_ROOT; };
+		B48CECB71E645BC80002CE01 /* SQLiteDbClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SQLiteDbClass.m; path = TodoListApp/SQLiteDbClass.m; sourceTree = SOURCE_ROOT; };
+		B48CECB81E645BC80002CE01 /* TodoListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TodoListCell.h; path = TodoListApp/TodoListCell.h; sourceTree = SOURCE_ROOT; };
+		B48CECB91E645BC80002CE01 /* TodoListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TodoListCell.m; path = TodoListApp/TodoListCell.m; sourceTree = SOURCE_ROOT; };
+		B48CECBA1E645BC80002CE01 /* TodoListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TodoListTableViewController.h; path = TodoListApp/TodoListTableViewController.h; sourceTree = SOURCE_ROOT; };
+		B48CECBB1E645BC80002CE01 /* TodoListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TodoListTableViewController.m; path = TodoListApp/TodoListTableViewController.m; sourceTree = SOURCE_ROOT; };
+		B48CECBC1E645BC80002CE01 /* TodoObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TodoObject.h; path = TodoListApp/TodoObject.h; sourceTree = SOURCE_ROOT; };
+		B48CECBD1E645BC80002CE01 /* TodoObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TodoObject.m; path = TodoListApp/TodoObject.m; sourceTree = SOURCE_ROOT; };
+		B4C15ACB1E6433D300C0A7F5 /* ToDoListApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoListApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4C15AE41E6433D300C0A7F5 /* ToDoListAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoListAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4C15AE81E6433D300C0A7F5 /* SimpleNotePadAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleNotePadAppTests.m; sourceTree = "<group>"; };
 		B4C15AEA1E6433D300C0A7F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B4C15AEF1E6433D300C0A7F5 /* SimpleNotePadAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleNotePadAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4C15AEF1E6433D300C0A7F5 /* ToDoListAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoListAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4C15AF31E6433D300C0A7F5 /* SimpleNotePadAppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleNotePadAppUITests.m; sourceTree = "<group>"; };
 		B4C15AF51E6433D300C0A7F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B4C15B011E64347500C0A7F5 /* NoteListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteListTableViewController.h; sourceTree = "<group>"; };
-		B4C15B021E64347500C0A7F5 /* NoteListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteListTableViewController.m; sourceTree = "<group>"; };
-		B4C15B0B1E6437A300C0A7F5 /* NoteObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteObject.h; sourceTree = "<group>"; };
-		B4C15B0C1E6437A300C0A7F5 /* NoteObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteObject.m; sourceTree = "<group>"; };
-		B4C15B0E1E6438AF00C0A7F5 /* SQLiteDbClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLiteDbClass.h; sourceTree = "<group>"; };
-		B4C15B0F1E6438AF00C0A7F5 /* SQLiteDbClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLiteDbClass.m; sourceTree = "<group>"; };
-		B4C15B111E643F3800C0A7F5 /* NoteListCellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteListCellTableViewCell.h; sourceTree = "<group>"; };
-		B4C15B121E643F3800C0A7F5 /* NoteListCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteListCellTableViewCell.m; sourceTree = "<group>"; };
-		B4C15B141E643FF300C0A7F5 /* CustomTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTextViewController.h; sourceTree = "<group>"; };
-		B4C15B151E643FF300C0A7F5 /* CustomTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTextViewController.m; sourceTree = "<group>"; };
 		B4C15B181E6446A300C0A7F5 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -93,12 +94,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B48CECAD1E645BC80002CE01 /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				B48CECAE1E645BC80002CE01 /* LaunchScreen.storyboard */,
+				B48CECB01E645BC80002CE01 /* Main.storyboard */,
+			);
+			name = Base.lproj;
+			path = TodoListApp/Base.lproj;
+			sourceTree = SOURCE_ROOT;
+		};
 		B4C15AC21E6433D200C0A7F5 = {
 			isa = PBXGroup;
 			children = (
-				B4C15ACD1E6433D300C0A7F5 /* SimpleNotePadApp */,
-				B4C15AE71E6433D300C0A7F5 /* SimpleNotePadAppTests */,
-				B4C15AF21E6433D300C0A7F5 /* SimpleNotePadAppUITests */,
+				B4C15ACD1E6433D300C0A7F5 /* ToDoListApp */,
+				B4C15AE71E6433D300C0A7F5 /* ToDoListAppTests */,
+				B4C15AF21E6433D300C0A7F5 /* ToDoListAppUITests */,
 				B4C15ACC1E6433D300C0A7F5 /* Products */,
 				B4C15B171E6446A200C0A7F5 /* Frameworks */,
 			);
@@ -107,69 +118,55 @@
 		B4C15ACC1E6433D300C0A7F5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B4C15ACB1E6433D300C0A7F5 /* SimpleNotePadApp.app */,
-				B4C15AE41E6433D300C0A7F5 /* SimpleNotePadAppTests.xctest */,
-				B4C15AEF1E6433D300C0A7F5 /* SimpleNotePadAppUITests.xctest */,
+				B4C15ACB1E6433D300C0A7F5 /* ToDoListApp.app */,
+				B4C15AE41E6433D300C0A7F5 /* ToDoListAppTests.xctest */,
+				B4C15AEF1E6433D300C0A7F5 /* ToDoListAppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B4C15ACD1E6433D300C0A7F5 /* SimpleNotePadApp */ = {
+		B4C15ACD1E6433D300C0A7F5 /* ToDoListApp */ = {
 			isa = PBXGroup;
 			children = (
-				B4C15B071E64354600C0A7F5 /* Helpers */,
-				B4C15AD11E6433D300C0A7F5 /* AppDelegate.h */,
-				B4C15AD21E6433D300C0A7F5 /* AppDelegate.m */,
-				B4C15AD71E6433D300C0A7F5 /* Main.storyboard */,
-				B4C15ADA1E6433D300C0A7F5 /* Assets.xcassets */,
-				B4C15ADC1E6433D300C0A7F5 /* LaunchScreen.storyboard */,
-				B4C15ADF1E6433D300C0A7F5 /* Info.plist */,
-				B4C15ACE1E6433D300C0A7F5 /* Supporting Files */,
-				B4C15B011E64347500C0A7F5 /* NoteListTableViewController.h */,
-				B4C15B021E64347500C0A7F5 /* NoteListTableViewController.m */,
-				B4C15B111E643F3800C0A7F5 /* NoteListCellTableViewCell.h */,
-				B4C15B121E643F3800C0A7F5 /* NoteListCellTableViewCell.m */,
+				B48CECAA1E645BC80002CE01 /* AppDelegate.h */,
+				B48CECAB1E645BC80002CE01 /* AppDelegate.m */,
+				B48CECAC1E645BC80002CE01 /* Assets.xcassets */,
+				B48CECAD1E645BC80002CE01 /* Base.lproj */,
+				B48CECB21E645BC80002CE01 /* CustomTextViewController.h */,
+				B48CECB31E645BC80002CE01 /* CustomTextViewController.m */,
+				B48CECB41E645BC80002CE01 /* Info.plist */,
+				B48CECB51E645BC80002CE01 /* main.m */,
+				B48CECB61E645BC80002CE01 /* SQLiteDbClass.h */,
+				B48CECB71E645BC80002CE01 /* SQLiteDbClass.m */,
+				B48CECB81E645BC80002CE01 /* TodoListCell.h */,
+				B48CECB91E645BC80002CE01 /* TodoListCell.m */,
+				B48CECBA1E645BC80002CE01 /* TodoListTableViewController.h */,
+				B48CECBB1E645BC80002CE01 /* TodoListTableViewController.m */,
+				B48CECBC1E645BC80002CE01 /* TodoObject.h */,
+				B48CECBD1E645BC80002CE01 /* TodoObject.m */,
 			);
+			name = ToDoListApp;
 			path = SimpleNotePadApp;
 			sourceTree = "<group>";
 		};
-		B4C15ACE1E6433D300C0A7F5 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				B4C15ACF1E6433D300C0A7F5 /* main.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		B4C15AE71E6433D300C0A7F5 /* SimpleNotePadAppTests */ = {
+		B4C15AE71E6433D300C0A7F5 /* ToDoListAppTests */ = {
 			isa = PBXGroup;
 			children = (
 				B4C15AE81E6433D300C0A7F5 /* SimpleNotePadAppTests.m */,
 				B4C15AEA1E6433D300C0A7F5 /* Info.plist */,
 			);
+			name = ToDoListAppTests;
 			path = SimpleNotePadAppTests;
 			sourceTree = "<group>";
 		};
-		B4C15AF21E6433D300C0A7F5 /* SimpleNotePadAppUITests */ = {
+		B4C15AF21E6433D300C0A7F5 /* ToDoListAppUITests */ = {
 			isa = PBXGroup;
 			children = (
 				B4C15AF31E6433D300C0A7F5 /* SimpleNotePadAppUITests.m */,
 				B4C15AF51E6433D300C0A7F5 /* Info.plist */,
 			);
+			name = ToDoListAppUITests;
 			path = SimpleNotePadAppUITests;
-			sourceTree = "<group>";
-		};
-		B4C15B071E64354600C0A7F5 /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				B4C15B0E1E6438AF00C0A7F5 /* SQLiteDbClass.h */,
-				B4C15B0F1E6438AF00C0A7F5 /* SQLiteDbClass.m */,
-				B4C15B0B1E6437A300C0A7F5 /* NoteObject.h */,
-				B4C15B0C1E6437A300C0A7F5 /* NoteObject.m */,
-				B4C15B141E643FF300C0A7F5 /* CustomTextViewController.h */,
-				B4C15B151E643FF300C0A7F5 /* CustomTextViewController.m */,
-			);
-			name = Helpers;
 			sourceTree = "<group>";
 		};
 		B4C15B171E6446A200C0A7F5 /* Frameworks */ = {
@@ -183,9 +180,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B4C15ACA1E6433D300C0A7F5 /* SimpleNotePadApp */ = {
+		B4C15ACA1E6433D300C0A7F5 /* ToDoListApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B4C15AF81E6433D300C0A7F5 /* Build configuration list for PBXNativeTarget "SimpleNotePadApp" */;
+			buildConfigurationList = B4C15AF81E6433D300C0A7F5 /* Build configuration list for PBXNativeTarget "ToDoListApp" */;
 			buildPhases = (
 				B4C15AC71E6433D300C0A7F5 /* Sources */,
 				B4C15AC81E6433D300C0A7F5 /* Frameworks */,
@@ -195,14 +192,14 @@
 			);
 			dependencies = (
 			);
-			name = SimpleNotePadApp;
+			name = ToDoListApp;
 			productName = SimpleNotePadApp;
-			productReference = B4C15ACB1E6433D300C0A7F5 /* SimpleNotePadApp.app */;
+			productReference = B4C15ACB1E6433D300C0A7F5 /* ToDoListApp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B4C15AE31E6433D300C0A7F5 /* SimpleNotePadAppTests */ = {
+		B4C15AE31E6433D300C0A7F5 /* ToDoListAppTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B4C15AFB1E6433D300C0A7F5 /* Build configuration list for PBXNativeTarget "SimpleNotePadAppTests" */;
+			buildConfigurationList = B4C15AFB1E6433D300C0A7F5 /* Build configuration list for PBXNativeTarget "ToDoListAppTests" */;
 			buildPhases = (
 				B4C15AE01E6433D300C0A7F5 /* Sources */,
 				B4C15AE11E6433D300C0A7F5 /* Frameworks */,
@@ -213,14 +210,14 @@
 			dependencies = (
 				B4C15AE61E6433D300C0A7F5 /* PBXTargetDependency */,
 			);
-			name = SimpleNotePadAppTests;
+			name = ToDoListAppTests;
 			productName = SimpleNotePadAppTests;
-			productReference = B4C15AE41E6433D300C0A7F5 /* SimpleNotePadAppTests.xctest */;
+			productReference = B4C15AE41E6433D300C0A7F5 /* ToDoListAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		B4C15AEE1E6433D300C0A7F5 /* SimpleNotePadAppUITests */ = {
+		B4C15AEE1E6433D300C0A7F5 /* ToDoListAppUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B4C15AFE1E6433D300C0A7F5 /* Build configuration list for PBXNativeTarget "SimpleNotePadAppUITests" */;
+			buildConfigurationList = B4C15AFE1E6433D300C0A7F5 /* Build configuration list for PBXNativeTarget "ToDoListAppUITests" */;
 			buildPhases = (
 				B4C15AEB1E6433D300C0A7F5 /* Sources */,
 				B4C15AEC1E6433D300C0A7F5 /* Frameworks */,
@@ -231,9 +228,9 @@
 			dependencies = (
 				B4C15AF11E6433D300C0A7F5 /* PBXTargetDependency */,
 			);
-			name = SimpleNotePadAppUITests;
+			name = ToDoListAppUITests;
 			productName = SimpleNotePadAppUITests;
-			productReference = B4C15AEF1E6433D300C0A7F5 /* SimpleNotePadAppUITests.xctest */;
+			productReference = B4C15AEF1E6433D300C0A7F5 /* ToDoListAppUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -262,7 +259,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B4C15AC61E6433D200C0A7F5 /* Build configuration list for PBXProject "SimpleNotePadApp" */;
+			buildConfigurationList = B4C15AC61E6433D200C0A7F5 /* Build configuration list for PBXProject "ToDoListApp" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -275,9 +272,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B4C15ACA1E6433D300C0A7F5 /* SimpleNotePadApp */,
-				B4C15AE31E6433D300C0A7F5 /* SimpleNotePadAppTests */,
-				B4C15AEE1E6433D300C0A7F5 /* SimpleNotePadAppUITests */,
+				B4C15ACA1E6433D300C0A7F5 /* ToDoListApp */,
+				B4C15AE31E6433D300C0A7F5 /* ToDoListAppTests */,
+				B4C15AEE1E6433D300C0A7F5 /* ToDoListAppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -287,9 +284,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4C15ADE1E6433D300C0A7F5 /* LaunchScreen.storyboard in Resources */,
-				B4C15ADB1E6433D300C0A7F5 /* Assets.xcassets in Resources */,
-				B4C15AD91E6433D300C0A7F5 /* Main.storyboard in Resources */,
+				B48CECC31E645BC80002CE01 /* Info.plist in Resources */,
+				B48CECC11E645BC80002CE01 /* Main.storyboard in Resources */,
+				B48CECBF1E645BC80002CE01 /* Assets.xcassets in Resources */,
+				B48CECC01E645BC80002CE01 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,13 +312,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4C15AD31E6433D300C0A7F5 /* AppDelegate.m in Sources */,
-				B4C15B101E6438AF00C0A7F5 /* SQLiteDbClass.m in Sources */,
-				B4C15B131E643F3800C0A7F5 /* NoteListCellTableViewCell.m in Sources */,
-				B4C15B161E643FF300C0A7F5 /* CustomTextViewController.m in Sources */,
-				B4C15AD01E6433D300C0A7F5 /* main.m in Sources */,
-				B4C15B0D1E6437A300C0A7F5 /* NoteObject.m in Sources */,
-				B4C15B031E64347500C0A7F5 /* NoteListTableViewController.m in Sources */,
+				B48CECC81E645BC80002CE01 /* TodoObject.m in Sources */,
+				B48CECC61E645BC80002CE01 /* TodoListCell.m in Sources */,
+				B48CECC51E645BC80002CE01 /* SQLiteDbClass.m in Sources */,
+				B48CECC21E645BC80002CE01 /* CustomTextViewController.m in Sources */,
+				B48CECC71E645BC80002CE01 /* TodoListTableViewController.m in Sources */,
+				B48CECC41E645BC80002CE01 /* main.m in Sources */,
+				B48CECBE1E645BC80002CE01 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,31 +343,31 @@
 /* Begin PBXTargetDependency section */
 		B4C15AE61E6433D300C0A7F5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B4C15ACA1E6433D300C0A7F5 /* SimpleNotePadApp */;
+			target = B4C15ACA1E6433D300C0A7F5 /* ToDoListApp */;
 			targetProxy = B4C15AE51E6433D300C0A7F5 /* PBXContainerItemProxy */;
 		};
 		B4C15AF11E6433D300C0A7F5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B4C15ACA1E6433D300C0A7F5 /* SimpleNotePadApp */;
+			target = B4C15ACA1E6433D300C0A7F5 /* ToDoListApp */;
 			targetProxy = B4C15AF01E6433D300C0A7F5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B4C15AD71E6433D300C0A7F5 /* Main.storyboard */ = {
+		B48CECAE1E645BC80002CE01 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B4C15AD81E6433D300C0A7F5 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		B4C15ADC1E6433D300C0A7F5 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B4C15ADD1E6433D300C0A7F5 /* Base */,
+				B48CECAF1E645BC80002CE01 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B48CECB01E645BC80002CE01 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B48CECB11E645BC80002CE01 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -470,10 +468,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 52MFQKEG82;
-				INFOPLIST_FILE = SimpleNotePadApp/Info.plist;
+				INFOPLIST_FILE = TodoListApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.test.SimpleNotePadApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sample.ToDoListApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -483,10 +481,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 52MFQKEG82;
-				INFOPLIST_FILE = SimpleNotePadApp/Info.plist;
+				INFOPLIST_FILE = TodoListApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.test.SimpleNotePadApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sample.ToDoListApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -499,7 +497,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gio.SimpleNotePadAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleNotePadApp.app/SimpleNotePadApp";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ToDoListApp.app/ToDoListApp";
 			};
 			name = Debug;
 		};
@@ -511,7 +509,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gio.SimpleNotePadAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleNotePadApp.app/SimpleNotePadApp";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ToDoListApp.app/ToDoListApp";
 			};
 			name = Release;
 		};
@@ -540,7 +538,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B4C15AC61E6433D200C0A7F5 /* Build configuration list for PBXProject "SimpleNotePadApp" */ = {
+		B4C15AC61E6433D200C0A7F5 /* Build configuration list for PBXProject "ToDoListApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B4C15AF61E6433D300C0A7F5 /* Debug */,
@@ -549,7 +547,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B4C15AF81E6433D300C0A7F5 /* Build configuration list for PBXNativeTarget "SimpleNotePadApp" */ = {
+		B4C15AF81E6433D300C0A7F5 /* Build configuration list for PBXNativeTarget "ToDoListApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B4C15AF91E6433D300C0A7F5 /* Debug */,
@@ -558,7 +556,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B4C15AFB1E6433D300C0A7F5 /* Build configuration list for PBXNativeTarget "SimpleNotePadAppTests" */ = {
+		B4C15AFB1E6433D300C0A7F5 /* Build configuration list for PBXNativeTarget "ToDoListAppTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B4C15AFC1E6433D300C0A7F5 /* Debug */,
@@ -567,7 +565,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B4C15AFE1E6433D300C0A7F5 /* Build configuration list for PBXNativeTarget "SimpleNotePadAppUITests" */ = {
+		B4C15AFE1E6433D300C0A7F5 /* Build configuration list for PBXNativeTarget "ToDoListAppUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B4C15AFF1E6433D300C0A7F5 /* Debug */,

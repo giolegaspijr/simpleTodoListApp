@@ -1,14 +1,13 @@
 //
-//  NoteListCellTableViewCell.m
-//  SimpleNotePadApp
+//  TodoListCell.m
 //
 //  Created by Sergio Legaspi Jr. on 27/02/2017.
 //  Copyright © 2017 Sergio Legaspi Jr. All rights reserved.
 //
 
-#import "NoteListCellTableViewCell.h"
+#import "TodoListCell.h"
 
-@implementation NoteListCellTableViewCell
+@implementation TodoListCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];

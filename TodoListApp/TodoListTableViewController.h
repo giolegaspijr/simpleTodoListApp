@@ -1,5 +1,5 @@
 //
-//  NoteListTableViewController.h
+//  TodoListTableViewController.h
 //  SimpleNotePadApp
 //
 //  Created by Sergio Legaspi Jr. on 27/02/2017.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NoteListTableViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource>
+@interface TodoListTableViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource>
 
 @property (strong, nonatomic) IBOutlet UITableView *dataTableView;
 

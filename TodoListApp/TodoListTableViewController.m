@@ -1,14 +1,13 @@
 //
-//  NoteListTableViewController.m
-//  SimpleNotePadApp
+//  TodoListTableViewController.m
 //
 //  Created by Sergio Legaspi Jr. on 27/02/2017.
 //  Copyright © 2017 Sergio Legaspi Jr. All rights reserved.
 //
 
-#import "NoteListTableViewController.h"
-#import "NoteObject.h"
-#import "NoteListCellTableViewCell.h"
+#import "TodoListTableViewController.h"
+#import "TodoObject.h"
+#import "TodoListCell.h"
 #import "CustomTextViewController.h"
 
 
@@ -16,44 +15,45 @@
 #define UPDATE @"update"
 #define DELETE @"delete"
 
-@interface NoteListTableViewController () <CustomTextViewControllerDelegate>
+@interface TodoListTableViewController () <CustomTextViewControllerDelegate>
 
-@property (nonatomic) NoteObject *myNotes;
+@property (nonatomic) TodoObject *myTodos;
 
-@property (nonatomic) NSMutableArray *noteArray;
-@property (nonatomic) NSMutableDictionary *noteDictionary;
-@property (nonatomic) int noteID;
+@property (nonatomic) NSMutableArray *todoArray;
+@property (nonatomic) NSMutableDictionary *todoDictionary;
+@property (nonatomic) int todoID;
 
 @end
 
-@implementation NoteListTableViewController {
-    UILabel *noteLabel;
+@implementation TodoListTableViewController {
+    UILabel *todoLabel;
+    UISwitch *doneSwitch;
 }
 
 
 #pragma mark - Objects
-- (NoteObject *) myNotes {
-    if (!_myNotes) {
-        _myNotes = [[NoteObject alloc] init];
+- (TodoObject *)myTodos {
+    if (!_myTodos) {
+        _myTodos = [[TodoObject alloc] init];
     }
     
-    return _myNotes;
+    return _myTodos;
 }
 
 
-- (NSMutableArray *) noteArray {
-    if (!_noteArray) {
-        _noteArray = [[NSMutableArray alloc] init];
+- (NSMutableArray *) todoArray {
+    if (!_todoArray) {
+        _todoArray = [[NSMutableArray alloc] init];
     }
-    return _noteArray;
+    return _todoArray;
 }
 
 
-- (NSMutableDictionary *) noteDictionary {
-    if (!_noteDictionary) {
-        _noteDictionary = [[NSMutableDictionary alloc] init];
+- (NSMutableDictionary *) todoDictionary {
+    if (!_todoDictionary) {
+        _todoDictionary = [[NSMutableDictionary alloc] init];
     }
-    return _noteDictionary;
+    return _todoDictionary;
 }
 
 #pragma mark - app cycle
@@ -67,7 +67,7 @@
     
     
     //
-    if ([self.myNotes initNote]) {
+    if ([self.myTodos initTodo]) {
         [self refreshData];
     }
     else {
@@ -93,9 +93,9 @@
 #pragma mark - Table refresher
 - (void) refreshData {
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        self.noteArray = self.myNotes.notes;
-        if (self.noteArray) {
-            if ([self.noteArray count] > 0) {
+        self.todoArray = self.myTodos.todos;
+        if (self.todoArray) {
+            if ([self.todoArray count] > 0) {
                 dispatch_async(dispatch_get_main_queue(), ^  {
                     [self.dataTableView reloadData];
                 });
@@ -108,13 +108,13 @@
 
 #pragma mark - Table view data source
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return (self.noteArray) ? self.noteArray.count : 0;
+    return (self.todoArray) ? self.todoArray.count : 0;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     // Configure the cell...
-    if ([self.noteArray count] == 0) {
+    if ([self.todoArray count] == 0) {
         UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
         if (cell == nil) {
             cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"Cell"];
@@ -123,19 +123,28 @@
         return cell;
     }
     else {
-        if (self.noteArray) {
-            self.noteDictionary = [[NSMutableDictionary alloc] init];
-            if ([self.noteArray count] > indexPath.row) {
-                self.noteDictionary = [self.noteArray objectAtIndex:indexPath.row];
-                NoteListCellTableViewCell *cell = (NoteListCellTableViewCell *) [tableView dequeueReusableCellWithIdentifier:@"NoteCell"];
+        if (self.todoArray) {
+            self.todoDictionary = [[NSMutableDictionary alloc] init];
+            if ([self.todoArray count] > indexPath.row) {
+                self.todoDictionary = [self.todoArray objectAtIndex:indexPath.row];
+                TodoListCell *cell = (TodoListCell *) [tableView dequeueReusableCellWithIdentifier:@"TodoCell"];
 
-                if ([self.noteArray count] > 0) {
-                    NSString *noteContent = [NSString stringWithFormat:@"%@", [self.noteDictionary objectForKey:@"note"]];
+                if ([self.todoArray count] > 0) {
+                    NSString *todoContent = [NSString stringWithFormat:@"%@", [self.todoDictionary objectForKey:@"todo"]];
+                    int todoID = [[NSString stringWithFormat:@"%@",[self.todoDictionary objectForKey:@"todoID"]] intValue];
+                    int isDone = [[NSString stringWithFormat:@"%@", [self.todoDictionary objectForKey:@"isDone"]] intValue];
                     
-                    [cell.noteSnippetLabel setTag:111];
-                    noteLabel = (UILabel *)[cell viewWithTag:111];
+                    [cell.todoLabel setTag:111];
+                    todoLabel = (UILabel *)[cell viewWithTag:111];
+                    todoLabel.text = todoContent;
                     
-                    noteLabel.text = noteContent;
+                    [cell.doneSwitch setTag:todoID];
+                    doneSwitch = (UISwitch *)[cell viewWithTag: todoID];
+                    [doneSwitch setOn: isDone > 0 ? YES: NO];
+                    
+                    [doneSwitch addTarget:self
+                                   action:@selector(toggleTodoAction:)
+                         forControlEvents:UIControlEventValueChanged];
                     
                 }
                 return cell;
@@ -151,32 +160,39 @@
     return cell;
 }
 
+-(IBAction)toggleTodoAction:(id)sender {
+    NSInteger index = [sender tag];
+    if ([self.myTodos toggleTodo:(int)index]) {
+        [self refreshData];
+    }
+}
+
 
 #pragma mark - Navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
    // UINavigationController *navController = segue.destinationViewController;
     NSString *identifier = segue.identifier;
-    if ([identifier isEqualToString:@"displayNoteSegue"]) {
+    if ([identifier isEqualToString:@"displayTodoSegue"]) {
         NSIndexPath *selectedRowIndex = [self.dataTableView indexPathForSelectedRow];
         NSInteger index = selectedRowIndex.row;
         NSMutableDictionary *dict = [[NSMutableDictionary alloc] init];
-        dict = [self.noteArray objectAtIndex:index];
+        dict = [self.todoArray objectAtIndex:index];
         
-        NSString *noteContent = [NSString stringWithFormat:@"%@", [dict objectForKey:@"note"]];
-        int noteID = [[NSString stringWithFormat:@"%@",[dict objectForKey:@"noteID"]] intValue];
-        self.noteID = noteID;
-       // NSLog (@"[prepareForSegue] index: %ld; ID: %d", (long)index, noteID);
+        NSString *todoContent = [NSString stringWithFormat:@"%@", [dict objectForKey:@"todo"]];
+        int todoID = [[NSString stringWithFormat:@"%@",[dict objectForKey:@"todoID"]] intValue];
+        self.todoID = todoID;
+       // NSLog (@"[prepareForSegue] index: %ld; ID: %d", (long)index, todoID);
         
         CustomTextViewController *customTextViewController = segue.destinationViewController;
         customTextViewController.delegate = self;
-        customTextViewController.textContent = noteContent;
+        customTextViewController.textContent = todoContent;
         customTextViewController.action = UPDATE;
         
         NSLog (@"[prepareForSegue] update identifier: %@", identifier);
     }
-    else if ([identifier isEqualToString:@"addNoteSegue"]) {
+    else if ([identifier isEqualToString:@"addTodoSegue"]) {
         
-        NSLog (@"[prepareForSegue] add note: %@", identifier);
+        NSLog (@"[prepareForSegue] add todo: %@", identifier);
         CustomTextViewController *customTextViewController = segue.destinationViewController;
         customTextViewController.delegate = self;
         customTextViewController.textContent = @"";
@@ -188,17 +204,17 @@
 #pragma mark - CustomTextFieldDelegate
 - (void) getReturnTextWithContent: (NSString *) content forAction:(NSString*) action {
     if ([action isEqualToString:UPDATE]) {
-        if ([self.myNotes updateNote:content withNoteID:self.noteID]) {
+        if ([self.myTodos updateTodo:content withTodoID:self.todoID]) {
             [self refreshData];
         }
     }
     else if ([action isEqualToString:ADD]) {
-        if ([self.myNotes saveNote:content]) {
+        if ([self.myTodos saveTodo:content]) {
             [self refreshData];
         }
     }
     else if ([action isEqualToString:DELETE]) {
-        if ([self.myNotes deleteNote:self.noteID]) {
+        if ([self.myTodos deleteTodo:self.todoID]) {
             [self refreshData];
         }
     }
