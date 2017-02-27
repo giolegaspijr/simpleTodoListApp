@@ -9,12 +9,17 @@
 /* Begin PBXBuildFile section */
 		B4C15AD01E6433D300C0A7F5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B4C15ACF1E6433D300C0A7F5 /* main.m */; };
 		B4C15AD31E6433D300C0A7F5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B4C15AD21E6433D300C0A7F5 /* AppDelegate.m */; };
-		B4C15AD61E6433D300C0A7F5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4C15AD51E6433D300C0A7F5 /* ViewController.m */; };
 		B4C15AD91E6433D300C0A7F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4C15AD71E6433D300C0A7F5 /* Main.storyboard */; };
 		B4C15ADB1E6433D300C0A7F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4C15ADA1E6433D300C0A7F5 /* Assets.xcassets */; };
 		B4C15ADE1E6433D300C0A7F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4C15ADC1E6433D300C0A7F5 /* LaunchScreen.storyboard */; };
 		B4C15AE91E6433D300C0A7F5 /* SimpleNotePadAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B4C15AE81E6433D300C0A7F5 /* SimpleNotePadAppTests.m */; };
 		B4C15AF41E6433D300C0A7F5 /* SimpleNotePadAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B4C15AF31E6433D300C0A7F5 /* SimpleNotePadAppUITests.m */; };
+		B4C15B031E64347500C0A7F5 /* NoteListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4C15B021E64347500C0A7F5 /* NoteListTableViewController.m */; };
+		B4C15B0D1E6437A300C0A7F5 /* NoteObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B4C15B0C1E6437A300C0A7F5 /* NoteObject.m */; };
+		B4C15B101E6438AF00C0A7F5 /* SQLiteDbClass.m in Sources */ = {isa = PBXBuildFile; fileRef = B4C15B0F1E6438AF00C0A7F5 /* SQLiteDbClass.m */; };
+		B4C15B131E643F3800C0A7F5 /* NoteListCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B4C15B121E643F3800C0A7F5 /* NoteListCellTableViewCell.m */; };
+		B4C15B161E643FF300C0A7F5 /* CustomTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4C15B151E643FF300C0A7F5 /* CustomTextViewController.m */; };
+		B4C15B1A1E6446CC00C0A7F5 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B4C15B181E6446A300C0A7F5 /* libsqlite3.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +44,6 @@
 		B4C15ACF1E6433D300C0A7F5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B4C15AD11E6433D300C0A7F5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B4C15AD21E6433D300C0A7F5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B4C15AD41E6433D300C0A7F5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		B4C15AD51E6433D300C0A7F5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		B4C15AD81E6433D300C0A7F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B4C15ADA1E6433D300C0A7F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B4C15ADD1E6433D300C0A7F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +54,17 @@
 		B4C15AEF1E6433D300C0A7F5 /* SimpleNotePadAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleNotePadAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4C15AF31E6433D300C0A7F5 /* SimpleNotePadAppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleNotePadAppUITests.m; sourceTree = "<group>"; };
 		B4C15AF51E6433D300C0A7F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4C15B011E64347500C0A7F5 /* NoteListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteListTableViewController.h; sourceTree = "<group>"; };
+		B4C15B021E64347500C0A7F5 /* NoteListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteListTableViewController.m; sourceTree = "<group>"; };
+		B4C15B0B1E6437A300C0A7F5 /* NoteObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteObject.h; sourceTree = "<group>"; };
+		B4C15B0C1E6437A300C0A7F5 /* NoteObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteObject.m; sourceTree = "<group>"; };
+		B4C15B0E1E6438AF00C0A7F5 /* SQLiteDbClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLiteDbClass.h; sourceTree = "<group>"; };
+		B4C15B0F1E6438AF00C0A7F5 /* SQLiteDbClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLiteDbClass.m; sourceTree = "<group>"; };
+		B4C15B111E643F3800C0A7F5 /* NoteListCellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteListCellTableViewCell.h; sourceTree = "<group>"; };
+		B4C15B121E643F3800C0A7F5 /* NoteListCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteListCellTableViewCell.m; sourceTree = "<group>"; };
+		B4C15B141E643FF300C0A7F5 /* CustomTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTextViewController.h; sourceTree = "<group>"; };
+		B4C15B151E643FF300C0A7F5 /* CustomTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTextViewController.m; sourceTree = "<group>"; };
+		B4C15B181E6446A300C0A7F5 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4C15B1A1E6446CC00C0A7F5 /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +100,7 @@
 				B4C15AE71E6433D300C0A7F5 /* SimpleNotePadAppTests */,
 				B4C15AF21E6433D300C0A7F5 /* SimpleNotePadAppUITests */,
 				B4C15ACC1E6433D300C0A7F5 /* Products */,
+				B4C15B171E6446A200C0A7F5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,15 +117,18 @@
 		B4C15ACD1E6433D300C0A7F5 /* SimpleNotePadApp */ = {
 			isa = PBXGroup;
 			children = (
+				B4C15B071E64354600C0A7F5 /* Helpers */,
 				B4C15AD11E6433D300C0A7F5 /* AppDelegate.h */,
 				B4C15AD21E6433D300C0A7F5 /* AppDelegate.m */,
-				B4C15AD41E6433D300C0A7F5 /* ViewController.h */,
-				B4C15AD51E6433D300C0A7F5 /* ViewController.m */,
 				B4C15AD71E6433D300C0A7F5 /* Main.storyboard */,
 				B4C15ADA1E6433D300C0A7F5 /* Assets.xcassets */,
 				B4C15ADC1E6433D300C0A7F5 /* LaunchScreen.storyboard */,
 				B4C15ADF1E6433D300C0A7F5 /* Info.plist */,
 				B4C15ACE1E6433D300C0A7F5 /* Supporting Files */,
+				B4C15B011E64347500C0A7F5 /* NoteListTableViewController.h */,
+				B4C15B021E64347500C0A7F5 /* NoteListTableViewController.m */,
+				B4C15B111E643F3800C0A7F5 /* NoteListCellTableViewCell.h */,
+				B4C15B121E643F3800C0A7F5 /* NoteListCellTableViewCell.m */,
 			);
 			path = SimpleNotePadApp;
 			sourceTree = "<group>";
@@ -138,6 +157,27 @@
 				B4C15AF51E6433D300C0A7F5 /* Info.plist */,
 			);
 			path = SimpleNotePadAppUITests;
+			sourceTree = "<group>";
+		};
+		B4C15B071E64354600C0A7F5 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B4C15B0E1E6438AF00C0A7F5 /* SQLiteDbClass.h */,
+				B4C15B0F1E6438AF00C0A7F5 /* SQLiteDbClass.m */,
+				B4C15B0B1E6437A300C0A7F5 /* NoteObject.h */,
+				B4C15B0C1E6437A300C0A7F5 /* NoteObject.m */,
+				B4C15B141E643FF300C0A7F5 /* CustomTextViewController.h */,
+				B4C15B151E643FF300C0A7F5 /* CustomTextViewController.m */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		B4C15B171E6446A200C0A7F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B4C15B181E6446A300C0A7F5 /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +247,7 @@
 				TargetAttributes = {
 					B4C15ACA1E6433D300C0A7F5 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 52MFQKEG82;
 						ProvisioningStyle = Automatic;
 					};
 					B4C15AE31E6433D300C0A7F5 = {
@@ -273,9 +314,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4C15AD61E6433D300C0A7F5 /* ViewController.m in Sources */,
 				B4C15AD31E6433D300C0A7F5 /* AppDelegate.m in Sources */,
+				B4C15B101E6438AF00C0A7F5 /* SQLiteDbClass.m in Sources */,
+				B4C15B131E643F3800C0A7F5 /* NoteListCellTableViewCell.m in Sources */,
+				B4C15B161E643FF300C0A7F5 /* CustomTextViewController.m in Sources */,
 				B4C15AD01E6433D300C0A7F5 /* main.m in Sources */,
+				B4C15B0D1E6437A300C0A7F5 /* NoteObject.m in Sources */,
+				B4C15B031E64347500C0A7F5 /* NoteListTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,9 +469,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 52MFQKEG82;
 				INFOPLIST_FILE = SimpleNotePadApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.gio.SimpleNotePadApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.SimpleNotePadApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -435,9 +482,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 52MFQKEG82;
 				INFOPLIST_FILE = SimpleNotePadApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.gio.SimpleNotePadApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.SimpleNotePadApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -507,6 +556,7 @@
 				B4C15AFA1E6433D300C0A7F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B4C15AFB1E6433D300C0A7F5 /* Build configuration list for PBXNativeTarget "SimpleNotePadAppTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +565,7 @@
 				B4C15AFD1E6433D300C0A7F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B4C15AFE1E6433D300C0A7F5 /* Build configuration list for PBXNativeTarget "SimpleNotePadAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +574,7 @@
 				B4C15B001E6433D300C0A7F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

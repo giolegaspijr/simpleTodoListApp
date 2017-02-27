@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  NoteListCellTableViewCell.h
 //  SimpleNotePadApp
 //
 //  Created by Sergio Legaspi Jr. on 27/02/2017.
@@ -8,8 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface NoteListCellTableViewCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UILabel *noteSnippetLabel;
 
 @end
-
